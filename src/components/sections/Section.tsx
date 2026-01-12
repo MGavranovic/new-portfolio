@@ -4,7 +4,12 @@ interface SectionTypeProps {
   type: SectionType;
 }
 
-/** @description to accept props dynamically */
+/**
+ * Section component
+ *
+ * Renders different content based on the provided SectionType
+ * @param type - enum value that determines which section is displayed
+ */
 function Section({ type }: SectionTypeProps) {
   return (
     <div className="size-svw border border-red-600">
