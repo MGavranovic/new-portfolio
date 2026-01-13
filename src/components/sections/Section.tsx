@@ -1,4 +1,5 @@
 import { SectionType } from "../../constants";
+import About from "../pages/about/About";
 
 interface SectionTypeProps {
   type: SectionType;
@@ -9,11 +10,19 @@ interface SectionTypeProps {
  *
  * Renders different content based on the provided SectionType
  * @param type - enum value that determines which section is displayed
+ *
+ * 0 - about
+ *
+ * 1 - projects
+ *
+ * 2 - skills
+ *
+ * 3 - contact
  */
 function Section({ type }: SectionTypeProps) {
   return (
-    <div className="size-svw border border-red-600">
-      <p>{type}</p>
+    <div className="h-dvh size-vw border-2 border-red-600">
+      {type ? 0 : <About></About>}
     </div>
   );
 }
