@@ -1,5 +1,6 @@
 import { SectionType } from "../../constants";
 import About from "../pages/about/About";
+import Projects from "../pages/projects/Projects";
 
 interface SectionTypeProps {
   type: SectionType;
@@ -22,7 +23,8 @@ interface SectionTypeProps {
 function Section({ type }: SectionTypeProps) {
   return (
     <div className="h-dvh size-vw border-2 border-red-600">
-      {type ? 0 : <About></About>}
+      {type == 0 && <About></About>}
+      {type == 1 && <Projects></Projects>}
     </div>
   );
 }
