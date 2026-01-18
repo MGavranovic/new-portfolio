@@ -1,16 +1,10 @@
-/*
-
-*/
-
 /**
  * Section component
  *
  * Renders projects
  * Projects will be gathered through GitHub API
  *
- * TODO:
- *
- * * bottom should have an image carousel slider (could be implemented in a different component)
+ * @todo bottom should have an image carousel slider (could be implemented in a different component)
  */
 function Projects() {
   return (
