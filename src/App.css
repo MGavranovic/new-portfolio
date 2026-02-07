@@ -1,6 +1,2 @@
 @tailwind utilities;
 @import "tailwindcss";
-
-.pixel {
-  image-rendering: pixelated;
-}

@@ -1,6 +1,10 @@
 @tailwind utilities;
 @import "tailwindcss";
 
+body {
+  cursor: url("./assets/cursor/cursor-hover.webp"), auto;
+}
+
 .pixel {
   image-rendering: pixelated;
 }

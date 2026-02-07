@@ -4,10 +4,10 @@ function About() {
       className="
         min-h-screen w-full
         bg-center bg-no-repeat
-        bg-[url('../../../src/assets/bg-about-mobile.webp')]
+        bg-[url('../../../src/assets/about/bg-about-mobile.webp')]
         bg-cover
 
-        md:bg-[url('../../../src/assets/bg-about-full.webp')]
+        md:bg-[url('../../../src/assets/about/bg-about-full.webp')]
         md:bg-size-[85%_auto]
         md:bg-position-[center_bottom]
         
@@ -25,7 +25,7 @@ function About() {
           items-center justify-center
         "
       >
-        <div className="w-full lg:w-3/5 p-10 text-justify sm:h-3/5">
+        <div id="desc" className="w-full lg:w-3/5 p-10 text-justify sm:h-3/5">
           <img
             src="../../../src/assets/avatar-placeholder.png"
             alt="avatar-placeholder"
