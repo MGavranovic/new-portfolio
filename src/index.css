@@ -2,9 +2,31 @@
 @import "tailwindcss";
 
 body {
-  cursor: url("./assets/cursor/cursor-hover.webp"), auto;
+  cursor: none;
 }
 
 .pixel {
   image-rendering: pixelated;
+}
+
+#animated-cursor {
+  transform: translate(calc(var(--x) - 64px), calc(var(--y) - 64px));
+  /* scale: 0.5;
+  transform-origin: top left; */
+}
+
+@keyframes cursorAnim {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -640px 0;
+  }
+}
+
+@layer utilities {
+  .animate-cursor {
+    animation: cursorAnim 1s steps(10) infinite;
+    background-size: 640px 64px;
+  }
 }
