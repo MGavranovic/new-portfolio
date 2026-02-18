@@ -24,7 +24,7 @@ function Cursor({ animated }: CursorProps) {
     <div
       id="animated-cursor"
       className={`fixed
-        w-16 h-full
+        w-16 h-16
         pointer-events-none
         bg-no-repeat
         ${

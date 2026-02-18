@@ -1,6 +1,5 @@
 @tailwind utilities;
 @import "tailwindcss";
-
 body {
   cursor: none;
 }
@@ -10,9 +9,9 @@ body {
 }
 
 #animated-cursor {
-  transform: translate(calc(var(--x) - 64px), calc(var(--y) - 64px));
-  /* scale: 0.5;
-  transform-origin: top left; */
+  transform: translate(calc(var(--x) * 2), calc(var(--y) * 2));
+  scale: 0.5;
+  transform-origin: top left;
 }
 
 @keyframes cursorAnim {
